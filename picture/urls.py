@@ -8,5 +8,4 @@ app_name = "picture"
 
 urlpatterns = [
     path("movie/<int:movie_id>", views.movie, name="movie"),
-]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
